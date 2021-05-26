@@ -45,7 +45,7 @@ RANSAC 미적용
 ### ResNet50 pre-modeing
 - 사용할 데이터 : Cifar-100 dataset
 
-###Cifar-100 데이터 준비
+### Cifar-100 데이터 준비
 - Cifar-100 dataset은 32 x 32 x 3크기의 50,000개 training-set이 있다.
 - Cifar-100 dataset은 label은 100개의 class로 나누어져 있다.
 - Cifar-100 dataset 훈련,검증,테스트 집합으로 나눈다.
@@ -67,4 +67,4 @@ train : 192000, validation : 4800, test : 6000개
 
 
 ### 모델 성능
-<img src="./image/모델성능.png"  width="400" height="400">
+<img src="./image/performance.png"  width="400" height="400">
