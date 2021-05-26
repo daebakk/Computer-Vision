@@ -32,7 +32,7 @@
 RANSAC 적용
 
 
-<img src="./image/RANSAC.png" width="400" height="1000">
+<img src="./image/RANSAC.png" width="400" height="800">
 
 RANSAC 미적용
 
