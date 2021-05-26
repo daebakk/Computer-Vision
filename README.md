@@ -67,4 +67,4 @@ train : 192000, validation : 4800, test : 6000개
 
 
 ### 모델 성능
-<img src="./image/performance.png"  width="400" height="400">
+<img src="./image/performance.png">
