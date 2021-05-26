@@ -32,8 +32,8 @@
 RANSAC 적용
 
 
-<img src="./image/RANSAC.png" width="600" height="1200">
+<img src="./image/RANSAC.png" width="400" height="1000">
 
 RANSAC 미적용
 
-<img src="./image/NO_RANSAC.png" width="600" height="600">
+<img src="./image/NO_RANSAC.png" width="400" height="400">
