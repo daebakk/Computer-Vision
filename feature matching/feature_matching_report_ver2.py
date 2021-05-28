@@ -95,8 +95,7 @@ def feature_matching(img1, img2, RANSAC=False, threshold = 300, keypoint_num = N
         # ToDo
         # backward 방식으로 dst완성
         '''
-
-        #Backward 방식
+        # Backward 방식
         # dst의 크기 결정하기
         # 원본 이미지의 모든점에 대해서 행렬 M에 의해 변환을 한 후 이 변환된 점들의 x,y축에 대해서 범위를 구한다
         # 범위를 구한 것에서 각 축에 대해 최솟값과 최댓값을 구한 후 각 축에 대한 최댓값과 최솟값의 차이를 dst의 크기로 정한다.
@@ -287,6 +286,7 @@ def feature_matching(img1, img2, RANSAC=False, threshold = 300, keypoint_num = N
         s_h_ = int(s_h_max - s_h_min)
         s_w_ = int(s_w_max - s_w_min)
         """
+        dst = np.zeros((h_, w_, 3))
         # BACKWARD
         for row_ in range(h_):
             for col_ in range(w_):
@@ -336,6 +336,7 @@ def main():
 
     cv2.imshow('No RANSAC' + '201804222', dst_no_ransac)
     cv2.imshow('Use RANSAC' + '201804222', dst_use_ransac)
+    cv2.imwrite('../resources/image/UseRANSAC_201804222.png',dst_use_ransac)
 
     cv2.imshow('original image' + '201804222', img)
     cv2.imshow('reference image' + '201804222', img_ref)
